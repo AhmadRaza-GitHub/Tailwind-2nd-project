@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary-green: #14A800;
+    --color-bg-hero-color: #0f1410;
+    --color-bg-color: #06100a;
+    --color-bg2-color: #091410;
+    --color-bg-skills-color: #0e1c12;;
+    --color-bg-card-color: #0c1810;
+    --color-text-primary: #87a88f;
+    --color-text-secondary: #4a6652;
+    --color-primary-borders: rgba(255,255,255,0.07);
+
+
+    --animate-slider-scroll: scroll-animation 20s linear infinite;
+    @keyframes scroll-animation {
+        0% {
+            transform: translate(0%);
+        } 100% {
+            transform: translate(-100%);
+        }
+    }
+}
