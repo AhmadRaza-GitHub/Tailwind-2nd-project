@@ -1,11 +1,718 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build.Site</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+
+<style>
+    .cta-glow {
+    background: linear-gradient(to bottom right, rgba(15,171,57,0.2), black);
+  }
+
+</style>
+
+  <body>
+
+    <header class="sticky top-0 z-50 w-full">
+      <nav class="text-text-primary bg-bg-color border-b border-primary-border border-default">
+        <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 flex flex-wrap items-center justify-between py-5">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span class="self-center text-white text-3xl text-heading  whitespace-nowrap font-black">Build<span class="text-primary-green text-2xl shadow-white">•</span>Site</span>
+          </a>
+          <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <button type="button" class="text-white bg-primary-green rounded-3xl hover:bg-brand-strong box-border border border-transparent focus:ring-0 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2 focus:outline-none cursor-pointer hover:-translate-y-1 active:-translate-y-1 hover:shadow-sm active:shadow-sm hover:shadow-primary-green active:shadow-primary-green  transition duration-300">Get free Mockup <i class="ri-arrow-right-long-line"></i></button>
+              <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-cta" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-100 h-100 cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 w-full md:w-auto md:order-1" id="navbar-cta">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-10 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary items-center">
+              <li>
+                <a href="index.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent active:underline decoration-primary-green hover:text-primary-green nav-link">Home</a>
+              </li>
+              <li>
+                <a href="pages/work.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent active:underline decoration-primary-green hover:text-primary-green nav-link" >Work</a>
+              </li>
+              <li>
+                <a href="pages/services.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent active:underline decoration-primary-green hover:text-primary-green underline-offset-3 text-primary-green underline nav-link">Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative h-auto flex flex-col bg-bg-hero-color isolate border-b-2 border-primary-border">
+        <div class="absolute left-1/2 top-44 -translate-x-1/2 h-0 w-100 bg-primary-green rounded-full opacity-10 shadow-[0_0_150px_90px_#14A800] shadow-primary-green -z-30"></div>
+        <div id="particles-js" class="absolute inset-0 -z-20 w-full h-full"></div>  
+        <div class="absolute inset-0 bg-[linear-gradient(rgb(26_38_24/0.35)_1px,transparent_1px),linear-gradient(90deg,rgb(26_38_24/0.35)_1px,transparent_1px)] bg-[size:64px_64px] -z-10"></div>
+        <div class="container mx-auto px-4 md:px-8 lg:px-10 py-15">
+          <h4 class="text-primary-green text-md pb-6 font-bold uppercase"> — Services</h4>
+          <h2 class="text-5xl font-black text-white pb-6">Everything You Need to <br> <span class="text-primary-green">Win Online</span></h2>
+          <p class="pb-4 block md:inline text-text-primary text-md">From a simple landing page to a full e-commerce platform — we have the expertise to build exactly what your business needs to grow.</p>
+        </div>
+      </section>
+
+      <section class="bg-bg-color h-auto">
+        <div class="container mx-auto px-4 md:px-8 lg:px-10 text-text-primary pt-50 pb-25 flex flex-col gap-15">
+          <div class="flex flex-col gap-8 lg:flex-row items-start lg:justify-between lg:items-end"> 
+            <div>
+              <h4 class="text-primary-green text-md pb-6 font-bold uppercase"> — Full Service List</h4>
+              <h2 class="text-4xl font-black text-white pb-6">Pick the Service That <br> <span class="text-primary-green">Fits Your Goal</span></h2>
+            </div>
+          </div>
+
+          <div class="flex flex-col border border-primary-border rounded-xl overflow-hidden">
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+            <div class="bg-bg-card-color cursor-pointer">
+              <div class="w-full p-4 px-5 border-b border-primary-border service-list-card text-text-primary hover:text-white trasition duration-300 flex justify-between">
+                <div>
+                  <p><span class="text-text-secondary pr-4 font-normal tracking-normal text-xs">01</span> <span class=" text-sm font-black tracking-wide">Custom Website</span></p>
+                </div>
+                <div class="hidden service-list-icon">
+                  <i class="ri-arrow-down-s-line text-primary-green text-lg transition duration-300"></i>
+                </div>
+              </div>
+              <div class="hidden text-sm text-text-primary px-6 py-5 service-list-show-card bg-[rgba(20,168,0,0.13)]">
+                  <div class="pb-4">
+                    <h6 class="text-white font-black text-lg pb-3">Custom Websites</h6>
+                    <p class="leading-6 text-sm pb-5">Fully responsive, SEO-ready websites built from scratch — no templates. Every pixel tailored to your brand, goals, and audience.</p>
+                    <ul class="pb-5">
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>100% Custom Design</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Mobile Responsive</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>SEO Ready from Day 1</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Fast Load Speed</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>CMS Integration</li>
+                      <li class="text-sm leading-7 list-none"><i class="ri-check-fill pr-2 text-primary-green text-md font-bold"></i>Figma Mockup First</li>
+                    </ul>
+                    <span class=" text-primary-green font-medium text-xs bg-[rgba(20,168,0,0.12)] p-2 px-3 border border-primary-green/20 rounded-2xl"><i class="ri-fire-fill pr-1"></i>Most Popular Service</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-bg2-color h-auto">
+        <div class="container mx-auto px-4 md:px-8 lg:px-10 text-text-primary pt-50 pb-25 flex flex-col gap-15">
+          <div class="text-center"> 
+              <h4 class="text-primary-green text-md pb-4 font-bold uppercase"> — FAQ</h4>
+              <h2 class="text-4xl font-black text-white pb-4">Questions We Get <br> <span class="text-primary-green">All the Time</span></h2>
+          </div>
+
+          <div class="flex flex-col border border-primary-border rounded-xl overflow-hidden">
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparent cursor-pointer">
+              <div class="w-full p-5 px-6 border-b border-primary-border text-text-primary hover:text-white trasition duration-300">
+                <div class="flex justify-between items-center FAQ-card">
+                  <div class="">
+                    <p class="text-white text-sm font-bold">How long does it take to build a website?</p>
+                  </div>
+                  <div class="FAQ-icon text-text-primary ">
+                    <span class="text-xl">+</span>
+                  </div>
+                </div>
+                <div class="hidden text-sm text-text-primary pt-3 FAQ-show-card bg-transparent">
+                    <p class="leading-6 text-sm">Most projects are delivered in 7–14 business days. The timeline depends on scope: a landing page typically takes 3–5 days, a full business website 7–10 days, and an e-commerce store 10–14 days. We share a clear timeline in your proposal before starting.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="bg-bg2-color h-auto">
+        <div class="container mx-auto px-4 md:px-8 lg:px-10 text-text-primary py-25 flex flex-col gap-15">
+
+          <div>
+            <h4 class="text-primary-green text-md pb-4 font-bold uppercase"> — Why Build.Site</h4>
+            <h2 class="text-4xl font-black text-white pb-4">Not All Web Agencies <br> <span class="text-primary-green">Are Created Equal</span></h2>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-y-5 gap-x-8">
+
+            <div class="flex-1 flex flex-col border border-primary-border rounded-xl overflow-hidden bg-red-800/6">
+              <div class="flex items-center gap-4 p-6 md:p-8 border-b border-primary-border">
+                <div class="w-9 h-9 rounded-lg bg-red-500/10 text-rose-500 flex items-center justify-center text-lg font-bold flex-shrink-0">✕</div>
+                <h3 class="text-rose-500 font-bold text-md">Typical Agency or Freelancer</h3>
+              </div>
+              <ul class="flex flex-col gap-4 p-6 md:p-8">
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">You get a template — dressed up to look custom</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">Weeks of back-and-forth before seeing anything</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">No design preview — you only see it after it's built</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">Hidden fees appear at the end of the project</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">Goes quiet for days — you never know the status</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">Revisions cost extra, every single time</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">Delivered late — deadlines treated as suggestions</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-red-500 text-sm mt-0.5 flex-shrink-0">✕</span>
+                  <p class="text-text-primary text-sm leading-6">After launch you're on your own</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-green-900/8 flex-1 flex flex-col border border-primary-border rounded-xl overflow-hidden">
+              <div class="flex items-center gap-4 p-6 md:p-8 border-b border-primary-border">
+                <div class="w-9 h-9 rounded-lg bg-primary-green/10 text-primary-green flex items-center justify-center text-lg font-bold flex-shrink-0">✓</div>
+                <h3 class="text-primary-green font-bold text-md">Build.Site</h3>
+              </div>
+              <ul class="flex flex-col gap-3 p-6 md:p-8">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-md font-bold mt-0.5">✓</span>
+                  <p class="text-white text-sm leading-6">100% custom design — no templates, ever</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-md font-bold mt-0.5">✓</span>
+                  <p class="text-white text-sm leading-6">Figma mockup delivered before any coding starts</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-md font-bold mt-0.5">✓</span>
+                  <p class="text-white text-sm leading-6">You approve the design first — zero surprises</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-md font-bold mt-0.5">✓</span>
+                  <p class="text-white text-sm leading-6">Clear pricing upfront — what we quote is what you pay</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-md font-bold mt-0.5">✓</span>
+                  <p class="text-white text-sm leading-6">Regular updates via screenshots, videos, and live previews</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-sm mt-0.5 flex-shrink-0">✓</span>
+                  <p class="text-white text-sm leading-6">Revisions included — we work until you are happy</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-sm mt-0.5 flex-shrink-0">✓</span>
+                  <p class="text-white text-sm leading-6">On-time delivery — most projects done in 7–14 days</p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary-green text-sm mt-0.5 flex-shrink-0">✓</span>
+                  <p class="text-white text-sm leading-6">Post-launch support included with every project</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+        <section class="bg-bg2-color h-auto">
+          <div class="container mx-auto px-4 md:px-8 lg:px-10 py-25">
+            <div class="cta-glow rounded-3xl border border-primary-border overflow-hidden px-6 py-16 md:py-20 text-center">
+              <div class="flex flex-col items-center gap-6 max-w-2xl mx-auto">
+      
+                <h2 class="text-4xl font-black text-white">Ready to Get <span class="text-primary-green">Started?</span></h2>
+      
+                <p class="text-text-primary text-base leading-7">Tell us what you need and we will send you a plan, timeline, and proposal within 24 hours. No pressure, no commitment.</p>
+      
+                <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                  <a href="#" class="inline-flex items-center gap-2 bg-primary-green text-white font-bold text-sm rounded-full px-7 py-3.5 hover:brightness-110 transition duration-300">
+                    Send a Message
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </a>
+      
+                  <a href="#" class="inline-flex items-center gap-2 border border-primary-border text-white font-bold text-sm rounded-full px-7 py-3.5 hover:bg-white/5 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.9 8.9 0 0 0-7.7 13.31L3 21l3.79-1.3a8.9 8.9 0 0 0 5.26 1.7h.01a8.9 8.9 0 0 0 8.9-8.87 8.83 8.83 0 0 0-2.66-6.21ZM12.06 19.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.96.94-2.73-.18-.28a7.4 7.4 0 0 1 11.51-9.2 7.35 7.35 0 0 1 2.18 5.24 7.4 7.4 0 0 1-7.6 7.2Zm4.05-5.5c-.22-.11-1.32-.65-1.52-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-.22-.11-.93-.34-1.78-1.1a6.66 6.66 0 0 1-1.23-1.53c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.79.77-.79 1.87 0 1.1.81 2.16.92 2.31.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.32-.54 1.5-1.06.19-.52.19-.96.13-1.06-.06-.1-.2-.15-.42-.26Z"/>
+                    </svg>
+                    WhatsApp Us
+                  </a>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-bg-color border-t-2 border-primary-border">
+      <div class="container mx-auto px-4 md:px-8 lg:px-10 py-15 text-text-secondary">
+         
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-30 gap-y-10 mb-12">
+          <div>
+            <h5 class="text-white font-black text-2xl mb-3">Build<span class="text-primary-green text-2xl shadow-white">•</span>Site</h5>
+            <p>Premium web agency delivering fast, beautiful, and conversion-ready websites for businesses worldwide.</p>
+            <div class="flex flex-wrap gap-3 mt-5">
+              <i class="ri-whatsapp-line p-3 bg-bg-skills-color text-xl text-text-primary border-2 border-primary-border rounded-xl hover:border-primary-green active:border-primary-green hover:text-primary-green active:text-primary-green cursor-pointer transition duration-200"></i>
+              <i class="ri-instagram-line p-3 bg-bg-skills-color text-xl text-text-primary border-2 border-primary-border rounded-xl hover:border-primary-green active:border-primary-green hover:text-primary-green active:text-primary-green cursor-pointer transition duration-200"></i>
+              <i class="ri-facebook-fill p-3 bg-bg-skills-color text-xl text-text-primary border-2 border-primary-border rounded-xl hover:border-primary-green active:border-primary-green hover:text-primary-green active:text-primary-green cursor-pointer transition duration-200"></i>
+              <i class="ri-tiktok-fill p-3 bg-bg-skills-color text-xl text-text-primary border-2 border-primary-border rounded-xl hover:border-primary-green active:border-primary-green hover:text-primary-green active:text-primary-green cursor-pointer transition duration-200"></i>
+            </div>
+         </div>
+  
+         <div>
+          <h6 class="text-lg font-black text-text-primary mb-4">PAGES</h6>
+          <ul class="flex flex-col gap-3 text-lg">
+            <li class="hover:text-primary-green cursor-pointer">Home</li>
+            <li class="hover:text-primary-green cursor-pointer">Work</li>
+            <li class="hover:text-primary-green cursor-pointer">Services</li>
+            <li class="hover:text-primary-green cursor-pointer">Contact</li>
+          </ul>
+         </div>
+  
+         <div>
+          <h6 class="text-lg font-black text-text-primary mb-4">SERVICES</h6>
+          <ul class="flex flex-col gap-3 text-lg">
+            <li class="hover:text-primary-green cursor-pointer">Custom Websites</li>
+            <li class="hover:text-primary-green cursor-pointer">Landing Pages</li>
+            <li class="hover:text-primary-green cursor-pointer">E-commerce</li>
+            <li class="hover:text-primary-green cursor-pointer">Redesign</li>
+            <li class="hover:text-primary-green cursor-pointer">White Label</li>
+          </ul>
+         </div>
+  
+         <div>
+          <h6 class="text-lg font-black text-text-primary mb-4">CONTACT</h6>
+          <ul class="flex flex-col gap-3 text-lg">
+            <li class="hover:text-primary-green cursor-pointer">WhatsApp us</li>
+            <li class="hover:text-primary-green cursor-pointer">Instagram DM</li>
+            <li class="hover:text-primary-green cursor-pointer">hello@buildsite.agency</li>
+          </ul>
+         </div>
+        </div>
+
+        <div>
+          <hr class="text-primary-border">
+          <div class="mt-10 flex flex-wrap justify-between items-center">
+            <p class="text-md pb-3">© 2025 Build.Site — All rights reserved</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="py-2 px-4 bg-bg-skills-color border-2 border-primary-border rounded-4xl">
+                <i class="ri-draft-fill text-primary-green pr-1 text-sm"></i>
+                <span>Fast Delivery</span>
+              </div>
+              <div class="py-2 px-4 bg-bg-skills-color border-2 border-primary-border rounded-4xl">
+                <i class="ri-flashlight-fill text-primary-green pr-1 text-sm"></i>
+                <span>Fast Delivery</span>
+              </div>
+              <div class="py-2 px-4 bg-bg-skills-color border-2 border-primary-border rounded-4xl">
+                <i class="ri-earth-fill text-primary-green pr-1 text-sm"></i>
+                <span>Fast Delivery</span>
+              </div>
+            </div> 
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <div class="flex justify-center items-center h-15 w-15 bg-primary-green rounded-full fixed bottom-6 right-6 shadow-lg shadow-primary-green/50 cursor-pointer hover:scale-115 active:scale-115 transition duration-350 z-100">
+      <i class="ri-message-3-fill text-white text-2xl"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        particlesJS('particles-js', {
+          particles: {
+            number: { value: 30 },
+            shape: { type: 'circle' },
+            size: { value: 2 },
+            color: { value: '#14A800' },
+            opacity: {
+              value: 0.9,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: '#151c17',
+              opacity: 1,
+            },
+            move: { speed: 2 }
+          },
+        });
+      });
+    </script>
+    <script>
+      let cards = document.querySelectorAll('.service-list-card');
+      let show_cards = document.querySelectorAll('.service-list-show-card');
+      let show_icon = document.querySelectorAll('.service-list-icon');
+      
+      cards.forEach((card, index) => {
+          card.addEventListener('click', () => {
+              show_cards.forEach((show_card, j) => {
+                  if (index === j) {
+                      show_card.classList.add('block');
+                      show_card.classList.remove('hidden');   
+
+                      show_icon[index].classList.add('block');                   
+                      show_icon[index].classList.remove('hidden');                   
+                    } else {
+                      show_card.classList.add('hidden');
+                      show_card.classList.remove('block');
+                      show_icon[j].classList.add('hidden');                   
+                      show_icon[j].classList.remove('block');                   
+                  }
+              });
+          });
+      });
+
+
+      let F_cards = document.querySelectorAll('.FAQ-card');
+      let F_show_cards = document.querySelectorAll('.FAQ-show-card');
+      let F_show_icon = document.querySelectorAll('.FAQ-icon');
+      
+      F_cards.forEach((card, index) => {
+          card.addEventListener('click', () => {
+              F_show_cards.forEach((show_card, j) => {
+                  if (index === j) {
+                      show_card.classList.add('block');
+                      show_card.classList.remove('hidden');   
+
+                      F_show_icon[index].style.color = '#14A800';                                     
+                    } else {
+                      show_card.classList.add('hidden');
+                      show_card.classList.remove('block');
+                      
+                      F_show_icon[j].style.color = '';                                     
+                  }
+              });
+          });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
